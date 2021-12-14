@@ -1,8 +1,9 @@
-FACTORIAL ASSIGNMENT
+twigEngineBlog
+
 ## Overview
 The assignment is done is twig engine.
 
-facrorial/ 
+twigEngineBlog/ 
 ### Folder Structure
 |-- dist/css/  (generated css) 
 |-- dist/scripts/  (js)
@@ -28,7 +29,7 @@ sass/
   |---- _plugins.scss
   |-- layouts
   |---- global
-  |----- layout.scss
+  |----- _layout.scss
   |-- utils
   |---- _base.scss
   |---- _headings.scss
