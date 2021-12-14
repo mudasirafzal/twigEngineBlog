@@ -1,0 +1,29 @@
+.pagination {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 30px auto;
+  text-align: center;
+  ul {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 5px;
+  }
+}
+.pagination__item {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 3px;
+	&.current {
+		background: rgba(0,0,0,.1)
+	}
+}
+.pagination__link {
+	color: var(--comet);
+	padding: 5px;
+	text-decoration: none;
+	&:focus, &:hover {
+	color: var(--greenhaze);
+	}
+}

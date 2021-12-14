@@ -1,0 +1,45 @@
+//Config import
+body {
+  margin: 0;
+  background-color: var(--white-lilac);
+  font-family: $font-primary;
+  color: var(--text-default);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  max-width: $container-max-width;
+  margin: 0px auto;
+  width: 100%;
+  flex: 1;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+header {
+  background-color: var(--mine-shaft);
+}
+footer {
+  background-color: var(--mine-shaft);
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+}
+.footer {
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.copyright {
+	float: left;
+	display: block;
+	color: var(--concrete);
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 20px;
+}

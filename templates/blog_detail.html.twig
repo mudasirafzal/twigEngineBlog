@@ -1,0 +1,27 @@
+
+{% block content %}
+{# Here is our blog detail page content #}
+<div id="blog-detail" class="container">
+  <div class="row">
+    <h1>Welcome to Blog Detail</h1>
+  </div>
+  <div class="row">
+    <div class="card-detail">
+      <div class="card-header">
+        <img src={{ blog.img }} alt="img" />
+      </div>
+      <div class="card-body">
+        <div class="user">
+          <img src={{ blog.author_image }} alt="user" />
+          <div class="user-info">
+            <span class="publish__date">{{ blog.date|date("d/M/Y") }}</span>
+            <small>{{ blog.time }}</small>
+          </div>
+        </div>
+        <h2 class="card-title"> {{ blog.title|striptags }}</h2>
+        <p>{{ blog.description|raw }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

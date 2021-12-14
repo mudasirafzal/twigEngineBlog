@@ -1,0 +1,23 @@
+{
+  "name": "factorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+    "build": "gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "prettier": "^2.1.2",
+    "sass-toolkit": "^2.10.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

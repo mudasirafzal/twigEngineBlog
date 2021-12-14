@@ -1,0 +1,19 @@
+.tag {
+	background: var(--silver);
+	border-radius: 50px;
+	font-size: 12px;
+	margin: 0;
+	color: var(--white);
+	padding: 2px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.tag-teal {
+    background-color: var(--shakespeare);
+}
+.tag-purple {
+    background-color: var(--indigo);
+}
+.tag-pink {
+    background-color: var(--pink);
+}

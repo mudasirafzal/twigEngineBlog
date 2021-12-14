@@ -1,0 +1,21 @@
+{
+    "name": "twig/exec",
+    "description": "Demo project for factorial assignment",
+    "type": "project",
+    "require": {
+        "twig/twig": "^3.3",
+        "symfony/asset": "^5.3"
+    },
+    "license": "1.0",
+    "autoload": {
+        "psr-4": {
+            "Twig\\Exec\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mudasir Afzal",
+            "email": "web.mudasir@gmail.com"
+        }
+    ]
+}

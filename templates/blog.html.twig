@@ -1,0 +1,58 @@
+{% extends "layouts.html.twig" %}
+
+{% block content %}
+{# Here is our page's main content #}
+<main>
+  <div class="container">
+    <div class="row">
+    <h1>Welcome to My Blog</h1>
+    </div>
+    <div class="row">
+      {% for blog in blogs %}
+      {# Blog Card #}
+        <div class="card">
+          <div class="card-header">
+            <img src={{ blog.img }} alt="img" />
+          </div>
+          <div class="card-body">
+            <span class="tag {{ blog.tag_color }}">{{ blog.tag }}</span>
+            <h2>{{ blog.title|striptags }}</h2>
+            <p>
+              {{ blog.description|length > 170 ? blog.description|slice(0, 170) ~ '...' : blog.description }}
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="user">
+              <img src={{ blog.author_image }} alt="user" />
+              <div class="user__info">
+                <span class="publish__date">{{ blog.date|date("d/M/Y") }}</span>
+                <small>{{ blog.time }}</small>
+              </div>
+            </div>
+            <div class="readmore">
+              <a class="readmore__link" href="#blog-detail">
+              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {# Pagination row #}
+    <div class="row">
+      <nav class="pagination">
+        <ul>
+          <li class="current pagination__item"><a class="pagination__link" href="#1">1</a>
+          <li class="pagination__item"><a class="pagination__link" href="#2">2</a>
+          <li class="pagination__item"><a class="pagination__link" href="#3">3</a>
+          <li class="pagination__item"><a class="pagination__link" href="#4">4</a>
+          <li class="pagination__item"><a class="pagination__link" href="#5">5</a>
+          <li class="pagination__item"><a class="pagination__link" href="#6">…</a>
+          <li class="pagination__item"><a class="pagination__link" href="#15">15</a>
+        </ul>
+        <a href="#2"><i class="fa fa-chevron-right pagination__link" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+  </div>
+</main>
+{% endblock %}
