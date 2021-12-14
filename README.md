@@ -2,7 +2,7 @@ twigEngineBlog
 
 ## Overview
 The assignment is done is twig engine.
-
+```
 twigEngineBlog/ 
 ### Folder Structure
 |-- dist/css/  (generated css) 
@@ -12,10 +12,10 @@ twigEngineBlog/
 |-- scss/  (Sass setup)
 |-- gulpfile.js  (configured gulp file)
 |-- package.json  (configured to load dependencies by npm)
-
+```
 ### Sass Structure
 Setup of the Sass files.
-
+```
 sass/
   |-- _settings.all.scss
   |-- layouts/
@@ -35,7 +35,7 @@ sass/
   |---- _headings.scss
   |---- _settings.all.scss
   |-- global.scss
-
+```
 * **config.scss/_**.scss** this configuration contains common mixins, variables, or similar baseline styles.
 * **global.scss**  the manifest file that imports all the partials or folders with globbing.
 * **layout/**  for structural layouts like header footer.
